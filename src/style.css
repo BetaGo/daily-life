@@ -75,6 +75,10 @@
   font-family: ZpixReviewLocal;
   src: url(/zpix.woff2);
 }
+@font-face {
+  font-family: ZpixMono;
+  src: url(/zpix.code.woff2);
+}
 
 html {
   line-height: var(--lineHeight-normal);
@@ -87,6 +91,12 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+}
+
+html body code[class*="language-"],
+pre[class*="language-"] {
+  font-family: ZpixMono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
 }
 
 footer {
